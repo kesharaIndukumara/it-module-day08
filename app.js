@@ -15,38 +15,40 @@ function isCorrectGuess(num) {
         document.getElementById("txt-number").value = "";
         resetNumber()
         count--;
-        if(count > 0){
-            document.getElementById("count").innerHTML = count;
-        }else{
+        document.getElementById("count").innerHTML = count;
+        if(count <= 0){
             document.getElementById("btn-guess").disabled = true;
+            document.getElementById("btn-guess").disabled = true;
+            return "Congratulations!..Game Over!"
         }
         return "Congratulations! You guessed the correct number.";
     }else if(num < number){
         count--;
-        if(count > 0){
-            document.getElementById("count").innerHTML = count;
-        }else{
+        document.getElementById("count").innerHTML = count;
+        if(count <= 0){
+            document.getElementById("btn-guess").disabled = true; 
             document.getElementById("btn-guess").disabled = true;
+            return "Game Over!"  
         }
         document.getElementById("txt-number").value = "";
         return "Your guess is too low. Try again!";
     }else if(num > number){
         count--;
-        if(count > 0){
-            
-            document.getElementById("count").innerHTML = count;
-        }else{
+        document.getElementById("count").innerHTML = count;
+        if(count <= 0){
+            document.getElementById("btn-guess").disabled = true; 
             document.getElementById("btn-guess").disabled = true;
+            return "Game Over!"  
         }
         document.getElementById("txt-number").value = "";
         return "Your guess is too high. Try again!";
     }else{
         count--;
-        if(count > 0){
-            
-            document.getElementById("count").innerHTML = count;
-        }else{
+        document.getElementById("count").innerHTML = count;
+        if(count <= 0){
+            document.getElementById("btn-guess").disabled = true; 
             document.getElementById("btn-guess").disabled = true;
+            return "Game Over!"  
         }
         document.getElementById("txt-number").value = "";
         return "Try Again..";
