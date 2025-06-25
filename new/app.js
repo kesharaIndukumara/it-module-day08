@@ -63,3 +63,40 @@ let numbers = [
 
 // console.log(numbers.sort());
 
+
+let customerList2 = [
+    "nimal",
+    "amal",
+    "kamal",
+    "bimal",
+    "sunil",
+    {
+        numbers: [10, 20, 30, 40, 50],
+        letters: ["A", "B", "C",{
+            simple: ["a", "b", "c"],
+        }, "D", "E"],
+    },
+    ["A", "B", "C", "D", "E"],
+
+];
+
+// console.log(customerList2);
+
+// console.log(customerList2[5].numbers[2]); // Accessing the third element in the number array within the object
+
+// console.log(customerList2[5].letters[1])// Accessing the second element in the letters array within the object
+
+// console.log(customerList2[6][2]); // Accessing the third element in the array within the customerList2 array
+
+// console.log(customerList2[5].letters[3].simple[2]); // Accessing the first element in the simple array within the letters array in the object
+
+
+function showAlert(){
+    Swal.fire({
+    title: "Good job!",
+    text: "You clicked the button!",
+    icon: "success"
+});
+}
+
+
