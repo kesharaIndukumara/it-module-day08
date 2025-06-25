@@ -1,15 +1,26 @@
-const number = 20;
+// const number = 20;
+let number = Math.floor(Math.random() * 10);
+console.log(number);
+
+function resetNumber(){
+    number = Math.floor(Math.random() * 10);
+}
 
 function isCorrectGuess(num) {
     num = parseInt(num);
 
     if(num == number){
+        document.getElementById("txt-number").value = "";
+        resetNumber()
         return "Congratulations! You guessed the correct number.";
     }else if(num < number){
+        document.getElementById("txt-number").value = "";
         return "Your guess is too low. Try again!";
     }else if(num > number){
+        document.getElementById("txt-number").value = "";
         return "Your guess is too high. Try again!";
     }else{
+        document.getElementById("txt-number").value = "";
         return "Try Again..";
     }
 }

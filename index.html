@@ -11,12 +11,30 @@
       crossorigin="anonymous"
     />
   </head>
-  <body style="margin: 10px;">
-
-    <input type="number" id="txt-number" />
-    <input type="button" value="Guess" id="btn-guess" />
-
-    <h2 id="element-h2">Hi...Please input your guess</h2>
+  <body style="margin: 10px">
+    <div class="container d-flex justify-content-center align-items-center min-vh-100">
+      <div class="card profile-card w-100">
+        <div class="card-body text-center">
+          <img
+            src="./img/ezgif-175289f8d7ec3d.jpg"
+            width="150"
+            height="100"
+            alt="User Profile"
+            class="rounded-circle profile-img mb-3"
+          />
+          <h3 class="card-title mb-2">Guess Number</h3>
+          <!-- <p class="card-text text-muted mb-3">Input number 1-10</p> -->
+          <input type="number" class="form-control-sm" id="txt-number" placeholder="Input number 0-10"/>
+          <input type="button" class="btn btn-outline-primary" value="Guess" id="btn-guess" />
+ 
+          <h2 id="element-h2"></h2>
+          <div class="social-icons mb-4">
+            <a href="#" class="me-2"><i class="bi bi-facebook"></i></a>
+            <a href="#"><i class="bi bi-instagram"></i></a>
+          </div>
+        </div>
+      </div>
+    </div>
 
     <script src="./app.js"></script>
   </body>
