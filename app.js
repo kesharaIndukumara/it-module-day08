@@ -1,9 +1,9 @@
 // const number = 20;
 let number = Math.floor(Math.random() * 10);
-console.log(number);
+console.log
 
 function resetNumber(){
-    number = Math.floor(Math.random() * 10);
+    number = Math.floor((Math.random() * 10)+1);
 }
 
 function isCorrectGuess(num) {
